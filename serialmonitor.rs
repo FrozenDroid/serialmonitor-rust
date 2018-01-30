@@ -44,7 +44,7 @@ impl Widget for Win {
         self.window.clone()
     }
 
-    fn view(relm: &Relm<Self>, _model: Self::Model) -> Self {
+    fn view(_relm: &Relm<Self>, _model: Self::Model) -> Self {
         let builder = gtk::Builder::new();
         let _ = builder.add_from_string(include_str!("main.glade"));
 
